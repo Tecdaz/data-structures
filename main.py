@@ -1,8 +1,10 @@
-from random import randint
-
-from sort import quick_sort
+from binary_tree import BinaryTree
 
 if __name__ == '__main__':
-    array = [randint(1, 1000) for i in range(10)]
-    quick_sort(array)
-    print(array)
+    tree = BinaryTree(5)
+    tree.add(3)
+    tree.add(4)
+    tree.add(2)
+    tree.add(6)
+    tree.delete(7)
+    tree.inorder()
