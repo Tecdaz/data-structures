@@ -26,9 +26,8 @@ class Grid:
             for j in range(self.get_width()):
                 self.data[i][j] = randint(min, max)
 
-    def fill(self):
+    def fill(self, counter=1):
         """Rellena la matriz secuencialmente, comenzando a contar desde 1"""
-        counter = 1
         for i in range(self.get_height()):
             for j in range(self.get_width()):
                 self.data[i][j] = counter
